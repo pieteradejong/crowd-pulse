@@ -50,6 +50,17 @@ User
 [User] <-----------------
 
 
+# Scripts
+
+```bash
+./init.sh            # check Go >= 1.20, download module deps, create the simulator venv (src/utils/venv)
+./test.sh            # gofmt, go vet, go build, go test, Python syntax, shellcheck
+./test.sh --docker   # also validate and build the compose stack (needs Colima: colima start)
+./run.sh             # docker compose up --build (ZooKeeper, Kafka, Spark, both Go services)
+./run.sh simulate    # send simulated emoji reactions to localhost:8080
+./run.sh down        # stop the stack; also: logs [service], build, lint, format, test
+```
+
 # Basic Run Local
 Start Zookeeper and Kafka (depending your specific setup)
 
