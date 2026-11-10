@@ -1,9 +1,13 @@
-# Golang + Kafka:L "message signing"
+# crowd-pulse
 
+Live emoji reactions from a crowd: fans send reactions over HTTP, a Go service writes them to
+Kafka, Spark Streaming counts each emoji in short windows, and the totals stream back to every
+viewer over Server-Sent Events. (Renamed from `go-service` on 2026-11-10; parts of this README
+still describe the earlier message-signing design.)
 
-[![gofmt](https://github.com/pieteradejong/go-service/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/pieteradejong/go-service/actions/workflows/go.yml)
+[![gofmt](https://github.com/pieteradejong/crowd-pulse/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/pieteradejong/crowd-pulse/actions/workflows/go.yml)
 
-[![gotest](https://github.com/pieteradejong/go-service/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/pieteradejong/go-service/actions/workflows/go.yml)
+[![gotest](https://github.com/pieteradejong/crowd-pulse/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/pieteradejong/crowd-pulse/actions/workflows/go.yml)
 
 
 ## Project summary

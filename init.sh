@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Set up everything needed to work on go-service. Idempotent: a second run reuses
+# Set up everything needed to work on crowd-pulse. Idempotent: a second run reuses
 # what it finds. Exit 0 = ready.
 #   ./init.sh          check Go, download both services' modules, create the simulator venv
 #   ./init.sh --clean  delete and recreate the simulator venv first
